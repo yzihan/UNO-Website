@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.4 125.4">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none;}.cls-2{stroke:#fff;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5px;}
+        </style>
+    </defs>
+    <title>menu</title>
+    <g id="图层_2" data-name="图层 2">
+        <g id="图层_1-2" data-name="图层 1">
+            <circle class="cls-1" cx="62.7" cy="62.7" r="62.7"/>
+            <line class="cls-2" x1="37" y1="44.2" x2="87.6" y2="44.2"/>
+            <line class="cls-2" x1="37" y1="61.6" x2="87.5" y2="61.6"/>
+            <line class="cls-2" x1="37" y1="81.2" x2="87.5" y2="81.2"/>
+        </g>
+    </g>
+</svg>

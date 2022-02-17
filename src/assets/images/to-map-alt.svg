@@ -1,0 +1,26 @@
+<svg id="编组" xmlns="http://www.w3.org/2000/svg" width="179" height="47" viewBox="0 0 179 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e62d29;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 24px;
+        font-family: YuGothicUI-Regular, Yu Gothic UI;
+        letter-spacing: 0.163em;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.024em;
+      }
+    </style>
+  </defs>
+  <rect id="矩形" class="cls-1" width="170" height="47"/>
+  <text id="开始旅程_" data-name="开始旅程 &gt;" class="cls-2" transform="translate(17 10)"><tspan x="0" y="26">开始旅程</tspan><tspan class="cls-3" y="26" xml:space="preserve"> &gt;</tspan><tspan class="cls-4" y="26"> </tspan></text>
+</svg>

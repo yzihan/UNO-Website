@@ -1,0 +1,32 @@
+image: docker:stable
+
+services:
+  - docker:18.09-dind
+
+variables:
+  IMAGE_TAG: harbor.zjuqsc.com/newbie-2019/newbie-2019
+  SERVICE_NAME: newbie-2019
+
+before_script:
+  - docker login -u docker -p $DOCKER_PASSWORD harbor.zjuqsc.com
+
+build:
+  only:
+    - master
+  stage: build
+  tags:
+    - docker
+  script:
+    - docker pull $IMAGE_TAG:latest || true
+    - docker build --cache-from $IMAGE_TAG:latest -t $IMAGE_TAG:$CI_COMMIT_SHA -t $IMAGE_TAG:latest .
+    - docker push $IMAGE_TAG:$CI_COMMIT_SHA
+    - docker push $IMAGE_TAG:latest
+
+deploy:
+  only:
+    - master
+  stage: deploy
+  tags:
+    - deploy
+  script:
+    - docker stack deploy --with-registry-auth --compose-file=docker-compose.yml ${SERVICE_NAME}
