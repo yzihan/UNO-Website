@@ -1,4 +1,4 @@
-### UNO-Website
+# UNO-Website
 
 ## Introduction
 This project utilizes React.js as its front-end framework and @material-ui/styles for a CSS-in-JS solution.
